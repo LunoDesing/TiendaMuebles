@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <link rel="stylesheet" href="estilos/normalize.css?v1">
+    <link rel="stylesheet" href="estilos/styles.css?v1">
+    <link rel="stylesheet" href="estilos/mediaQueries.css?v1">
+    <title>Mi tienda</title>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+
+            <a href="index.html">
+                <img class="nav__logo" src="assets/vectores/logo.svg" alt="">
+            </a>
+
+            <div class="nav__icons">
+
+                <a href="#nav">
+                    <img class="nav__open" src="assets/vectores/hamburguesa.svg" alt="">
+                </a>
+
+                <a href="#">
+                    <img class="nav__close" src="assets/vectores/cruz.svg" alt="">
+                </a>
+            </div>
+            <ul class="nav__items">
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#ofertas">Ofertas</a>
+                </li>
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#productos">Productos</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#redes">Mis Redes</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <div class="header__text">
+            <h1 class="header__title">Muebles que transforman tu vida, diseñados para cada rincón de tu hogar</h1>
+        </div>
+
+        <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+        <img class="header__wave" src="assets/vectores/wave.svg" alt="">
+
+    </header>
+    <main>
+
+        <section class="ofertas splide" id="ofertas">
+
+            <h4 class="ofertas__title">Mirá estas ofertas</h4>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo1.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo2.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo3.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo4.webp" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="productos" id="productos">
+
+      
+            <h5 class="productos__title">Elige la categoria que estas buscando</h5>
+            <div class="filters">
+
+
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="category1">Hogar</button>
+                <button class="filter-btn" data-filter="category2">Mesas</button>
+                <button class="filter-btn" data-filter="category3">Placard</button>
+                <button class="filter-btn" data-filter="category4">Sillones</button>
+                <button class="filter-btn" data-filter="category5">Tocadores</button>
+            </div>
+
+            <h5 class="productos__title2">Ó ingresa el nombre del mueble</h5>
+            <article class="busqueda">
+                <input class="busqueda__input" type="text" id="searchInput" placeholder="que buscas...?">
+                <button class="button__productos" id="searchButton">Buscar</button>
+            </article>
+
+            <div class="products" id="articulos">
+
+                <!-- --------------------- Audio/Video -------------------------- -->
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Sommier C/cajones + Respaldo Capitone 2pl</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho1.webp" alt="">
+                    <p class="product__description">Medidas 140x190</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+        
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Base Eco Cuero + Respaldo 2mt</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho2.webp" alt="">
+                    <p class="product__description">Medidas 200x200</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Base Sommier Box<br>Gris oscuro</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho3.webp" alt="">
+                    <p class="product__description">Medidas 200x200</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Respaldo Sommier<br>Capitoné + baúl 1,60 </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho4.webp" alt="">
+                    <p class="product__description">Medidas 160x100</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Respaldo Sommier<br>Capitoné + baúl 1,60 </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho5.webp" alt="">
+                    <p class="product__description">Medidas 160x100</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Respaldo p/ Sommier <br>Capitoné + 2pl </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/hogar/ho6.webp" alt="">
+                    <p class="product__description">Medidas 140</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+
+                </div>
+                
+
+
+
+
+                <!-- --------------------- Entretenimiento -------------------------- -->
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Mesa cuadrada<br>pino +  4 sillas </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me1.webp" alt="">
+                    <p class="product__description">Medidas 80x80x170</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Juego de comedor<br>mesa + 6 sillas</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me2.webp" alt="">
+                    <p class="product__description">Medidas 160x80x170</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Escritorio Pc <br>madera mazisa</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me3.webp" alt="">
+                    <p class="product__description">Medidas 80x80x170</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Mesa melamina<br>+  6 sillas </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me4.webp" alt="">
+                    <p class="product__description">Medidas 180x80x170</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Mesa rectangular<br>pino +  6 sillas </h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me5.webp" alt="">
+                    <p class="product__description">Medidas 170x80x140</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Mesa escritorio pc<br>pino + cajonera</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/mesas/me6.webp" alt="">
+                    <p class="product__description">Medidas 160x80x140</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+
+
+
+
+
+                <!-- --------------------- Hogar -------------------------- -->
+
+
+                <div class="product category3">
+                    <h2 class="product__title">Placard 4 puertas<br>+ espejo y cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/placard/pl1.webp" alt="">
+                    <p class="product__description">Medidas 200x40x190</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category3">
+                    <h2 class="product__title">Placard 6 puertas<br>+ 2 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/placard/pl2.webp" alt="">
+                    <p class="product__description">Medidas 200x40x190</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category3">
+                    <h2 class="product__title">Armario con estantes<br>+ 2 puertas</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/placard/pl3.webp" alt="">
+                    <p class="product__description">Medidas 200x80x40</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category3">
+                    <h2 class="product__title">porti-closet<br>+ estantes y cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/placard/pl4.webp" alt="">
+                    <p class="product__description">Medidas 200x40x190</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category3">
+                    <h2 class="product__title">porti-closet<br>+ estantes y cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/placard/pl5.webp" alt="">
+                    <p class="product__description">Medidas 200x40x190</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+            
+
+
+
+
+
+                <!-- --------------------- Accesorios -------------------------- -->
+
+
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón bicuerpo<br>+ 4 almohadones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si1.webp" alt="">
+                    <p class="product__description">Medidas 200x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón bicuerpo<br>+ 2 almohadones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si2.webp" alt="">
+                    <p class="product__description">Medidas 180x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón<br>+ 1 almohadón</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si3.webp" alt="">
+                    <p class="product__description">Medidas 80x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón<br>+ 3 almohadones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si4.webp" alt="">
+                    <p class="product__description">Medidas 80x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón<br>+ 1 almohadón</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si5.webp" alt="">
+                    <p class="product__description">Medidas 200x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Sofá sillón<br>+ 2 almohadones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/sillones/si6.webp" alt="">
+                    <p class="product__description">Medidas 80x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+            
+
+                <!-- --------------------- Cocina -------------------------- -->
+
+
+
+                <div class="product category5">
+                    <h2 class="product__title">Mueble Tocador Espejo + 6 luces<br>8 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/tocadores/to1.webp" alt="">
+                    <p class="product__description">Medidas 120x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category5">
+                    <h2 class="product__title">Mueble Tocador Espejo + 9 luces<br>9 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/tocadores/to2.webp" alt="">
+                    <p class="product__description">Medidas 120x70</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category5">
+                    <h2 class="product__title">Mueble Tocador Espejo + 8 luces<br>7 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/tocadores/to3.webp" alt="">
+                    <p class="product__description">Medidas 120x50</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category5">
+                    <h2 class="product__title">Mueble Tocador Espejo + 10 luces<br>10 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/tocadores/to4.webp" alt="">
+                    <p class="product__description">Medidas 120x120</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                <div class="product category5">
+                    <h2 class="product__title">Mueble Tocador Espejo + 8 luces<br>9 cajones</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/tocadores/to5.webp" alt="">
+                    <p class="product__description">Medidas 1x120</p>
+                    <div class="product__precio">
+                        <h4 class="product__text">Precio</h4>
+                        <h4 class="product__text">$0.000</h4>
+                    </div>
+                    <button class="product__footer">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </button>
+                </div>
+
+                
+
+
+
+
+
+            </div>
+
+            <button class="productos__cta" id="loadMoreAll" style="display:none;">Cargar más</button>
+
+        </section>
+
+
+
+
+        <section class="ubicacion">
+            <h4 class="ubicacion__title">¿Dónde estamos?</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0876738122856!2d-65.20664669999992!3d-26.8371636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d6dc2248763%3A0xd0fd743f18d52725!2sOficina!5e0!3m2!1ses-419!2sar!4v1709547697050!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="ubicacion__cta" href="https://maps.app.goo.gl/kzmMPWWSo8YhQu5M7">Ver ubicacion</a>
+        </section> 
+
+        <!-- <section class="correo">
+
+            <div class="correo__container">
+
+                <article class="correo__izquierda">
+
+                    <h4 class="correo__title">Contactanos</h4>
+
+                    <form class="correo__form" action="index.php" method="post">
+
+                        <input class="correo__input" type="text" id="name" name="name" placeholder="nombre">
+                        <input class="correo__input" type="email" id="email" name="email" placeholder="tu correo">
+                        <textarea class="correo__input correo__input--message" name="message" id="message"
+                            placeholder="tu mensaje"></textarea>
+                        <input class="correo__cta" type="submit" id="enviar" name="enviar" value="enviar">
+
+                    </form>
+
+
+                </article>
+
+                <article class="correo__derecha">
+
+                    <h4 class="correodos__title">Si prefieres, tambien puedes contactarnos por whatsapp</h4>
+
+                    <a class="whatsapp__cta" href="#">
+                        <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Enviar
+                        consulta</a>
+
+                    <h5 class="correo__horarios">
+                        <b>Horario de atencion:</b> <br> lunes a viernes <br> 9:00 a 13hs - 17:00 a 20:30 <br> sabados
+                        de 9:00 a 13:00hs
+                    </h5>
+
+                    <article class="social">
+                        <h5 class="social__title">Siguenos en nuestras redes</h5>
+                        <div class="social__icons">
+                            <a href=""><img class="social__icon" src="assets/vectores/facebook_redondo.svg" alt=""></a>
+                            <a href=""><img class="social__icon" src="assets/vectores/instagram_redondo.svg" alt=""></a>
+                        </div>
+                    </article>
+
+
+
+
+
+
+
+                </article>
+
+            </div>
+
+        </section> -->
+
+    </main>
+
+    <footer class="footer" id="redes">
+
+        <div class="footer__container">
+
+            <div class="footer__contenido">
+                <img class="footer__img" src="assets/vectores/logo.svg" alt="">
+                <div class="footer__grupo2">
+                    <h5 class="footer__text">sígueme en mis redes</h5>
+                    <div class="footer__icons">
+                        <img class="footer__icon" src="assets/vectores/facebook_redondo.svg" alt="">
+                        <img class="footer__icon" src="assets/vectores/instagram_redondo.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer__copy">
+                &copy 2024 "GOODSTYLE" - todos los derechos reservados - <br>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="javascript/scripts.js?v1"></script>
+</body>
+
+</html>
